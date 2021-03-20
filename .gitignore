@@ -7,3 +7,4 @@ contracts/artifacts/PublicResolver_metadata.json
 contracts/artifacts/PublicResolver.json
 contracts/artifacts/ResolverBase_metadata.json
 contracts/artifacts/ResolverBase.json
+DeploymentDoc.txt
