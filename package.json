@@ -24,7 +24,8 @@
     "watch": "npm-watch",
     "lint": "solium --dir ./contracts",
     "prepublishOnly": "truffle compile && truffle networks --clean",
-    "pub": "npm run prepublishOnly && npm publish"
+    "pub": "npm run prepublishOnly && npm publish",
+    "deploy-kovan": "truffle migrate --reset --network kovan"
   },
   "dependencies": {}
 }

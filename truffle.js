@@ -5,9 +5,8 @@ module.exports = {
   networks: {
     local: {
       host: 'localhost',
-      port: 9545,
+      port: 8545,
       network_id: '*',
-      gas: 4712388
     },
     ropsten: {
       provider: function() {
@@ -15,7 +14,13 @@ module.exports = {
       },
       network_id: '3',
       from: '0xa303ddc620aa7d1390baccc8a495508b183fab59'
-    }
+    },
+    "kovan": {
+			provider: () => new HDWalletProvider(process.env.MNEMONIC, "https://kovan.infura.io/v3/" + process.env.INFURA_API_KEY),
+			network_id: 42,
+			gas: 8000000,
+			gasPrice: 100000000000, //100gwei
+		}
   },
   mocha: {
     reporter: 'eth-gas-reporter',

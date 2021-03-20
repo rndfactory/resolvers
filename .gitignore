@@ -1,3 +1,9 @@
 build/
 node_modules/
 .env
+contracts/artifacts/DefaultReverseResolver_metadata.json
+contracts/artifacts/DefaultReverseResolver.json
+contracts/artifacts/PublicResolver_metadata.json
+contracts/artifacts/PublicResolver.json
+contracts/artifacts/ResolverBase_metadata.json
+contracts/artifacts/ResolverBase.json
